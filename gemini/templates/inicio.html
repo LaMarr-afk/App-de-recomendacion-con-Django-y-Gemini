@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprendimiento</title>
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+    <style>
+    #titulo-formulario {
+        text-align: center; /* Centra el texto horizontalmente */
+        width: 100%; /* Ocupa el ancho completo del contenedor para asegurar el centrado */
+        color: white; /* Asumiendo que quieres mantener el texto en blanco como en la imagen */
+    }
+    
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+    <h1 id="titulo-formulario">Modelo de Tenis</h1>
+    <p> Que modelo de tenis va con tus necesidades y caracteristicas</p>
+    <p> ¿Que buscas en los tus nuevos Tenis?</p>   
+
+    <form>
+        {{form.as_p}}
+        <button>
+            Enviar
+        </button>
+    </form>
+
+    <h1>{{comentario}}</h1>
+    <p>{{respuesta|safe}}</p>  
+</div>
+
+</body>
+</html>

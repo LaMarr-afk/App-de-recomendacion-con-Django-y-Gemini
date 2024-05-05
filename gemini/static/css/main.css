@@ -1,0 +1,17 @@
+body{
+
+    width: 100%;
+    height: 100%;
+    background: #202020;
+    color:whitesmoke;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+}
+.input{
+    background: wheat;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
